@@ -84,6 +84,11 @@
     transition: transform 0.3s ease;
     border-top: 0.1px solid gainsboro;
   }
+     header {
+        padding: 5px;
+      border-bottom: 0.1px solid gainsboro;
+    }
+    
   .menu-list a{
     border-bottom: none;
   }
@@ -570,8 +575,7 @@
 .section4{
   background-color: whitesmoke;
   height: 580px;
-    width: 100%;
-      
+    width: 100%;    
 }
 .evenement{
   text-align: center;
@@ -699,6 +703,11 @@
   .carde{
     margin-top: 8%;
   }
+  .section4{
+  background-color: whitesmoke;
+  height: 670px;
+    width: 100%;    
+}
   .plus{
  padding: 10px;
  width: 30%;
@@ -707,7 +716,6 @@
  background-color: #ff9900;
  color: white;
  
-  
     }
      }
 
@@ -801,8 +809,8 @@
 /* Mobile */
 @media (max-width: 768px) {
     .section6 {
-        padding: 30px 15px;
-        margin-top: 150%;
+        
+        margin-top: 160%;
     }
     
     .rose {
