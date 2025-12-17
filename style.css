@@ -29,9 +29,9 @@
       box-shadow: 0.1px 0.1px 0px  black;
       position: sticky;
       top: 0;
-     z-index: 1000;
+      z-index: 1000;
     }
-    nav a {
+    .nav a {
       margin: 15px;
       text-decoration: none;
       color: #000;
@@ -58,9 +58,58 @@
       background:  orange;
       transform: translateY(-1px);
     }
-    
 
-/* responsive navbar Mobile */
+.menu-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.hamburger {
+  display: none;
+}
+.toggle-input{
+  display: none;
+} 
+@media (max-width: 768px) {
+  .menu-list {
+    position: fixed;
+    top: 74px;
+   margin-left: -4%;
+    width: 100%;
+    height: 48%;
+    background: white;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    border-top: 0.1px solid gainsboro;
+  }
+  .menu-list a{
+    border-bottom: none;
+  }
+  .menu-list :hover{
+    color: orange;
+  }
+  
+ #toggle:checked ~ .menu-list {
+  transform: translateX(0);
+}
+
+  .hamburger {
+    display: block;
+    font-size: 30px;
+    padding: 2px;
+    cursor: pointer;
+}
+  .logo {
+    position: absolute;
+    left: 40%;
+  }
+  
+    .btn1 {
+     display: none;
+    }
+/* responsive navbar Mobile
 @media (max-width: 768px) {
   .logo{
     display: none;
@@ -84,7 +133,7 @@
       justify-content: space-between;
       font-size: 16px;
       gap: 40%;
-    }
+    } */
     /* nav a {
         font-size: 10px;
         display: flex;
@@ -144,9 +193,9 @@
 .section1{
   display: flex;
   justify-content: space-between;
+    width: 100%;
 }
 .image1{
- 
   border-radius: 20px;
  
 }
@@ -256,7 +305,7 @@
     margin-right: 0;
     margin-top: 10px;
     padding: 8%;
-    margin-left: 5%;
+   
   }
   .badge-top{
      display: none;
@@ -325,11 +374,12 @@
 }
 .section2{
   background-color: whitesmoke;
+   width: 100%;
+     margin: 20px auto;
 }
 .rang1{
   display: flex;
   justify-content: space-around;
-  gap:12px;
 
 }
 .btnformer{
@@ -351,7 +401,7 @@
   color: rgba(0, 0, 0, 0.651);
   padding: 14px;
   width: 364px;
-  height: 240px;
+  height: 250px;
   border-radius: 14px;
   margin-left: 5px;
   margin-top: 25px; 
@@ -404,9 +454,7 @@
     align-items: center;
     gap: 10px;
   }
-  .dernier{
-    margin-left: 5%;
-  }
+ 
 /* 
   .stat-card {
     width: 80%;
@@ -522,6 +570,8 @@
 .section4{
   background-color: whitesmoke;
   height: 580px;
+    width: 100%;
+      
 }
 .evenement{
   text-align: center;
@@ -533,7 +583,7 @@
    margin-top: 25%;
    justify-content: center;
    gap: 2%;
- 
+  
 }
 
 /* CARD */
@@ -546,6 +596,7 @@
     cursor: pointer;
     margin-top: -22%;
     width: 86%;
+    
 }
 
 .carde:hover {
@@ -646,7 +697,7 @@
     margin-top: -1%;
   }
   .carde{
-    margin-top: 5%;
+    margin-top: 8%;
   }
   .plus{
  padding: 10px;
@@ -655,9 +706,7 @@
  border: none;
  background-color: #ff9900;
  color: white;
- display: block;
-  margin: 0 auto;
-  margin-top: 25px
+ 
   
     }
      }
@@ -758,7 +807,6 @@
     
     .rose {
         gap: 20px;
-        padding: 0 10px;
     }
     .deuxieme button{
       margin-top: 28%;
